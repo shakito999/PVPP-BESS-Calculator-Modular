@@ -284,6 +284,12 @@ input {
   align-items: center;
   padding: 5px 0;
   border-bottom: 1px solid #e9ecef;
+  flex-wrap: wrap;
+}
+
+.cost-item span {
+  flex: 1;
+  min-width: 150px;
 }
 
 .cost-input {
@@ -417,6 +423,46 @@ input {
   .settings-panel, .cost-breakdown-panel {
     width: 100%;
     right: -100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  .settings-panel.show, .cost-breakdown-panel.show {
+    right: 0;
+  }
+
+  .settings-group, .cost-breakdown-group {
+    width: 100%;
+  }
+
+  .settings-content, .cost-breakdown-content {
+    padding-right: 5px;
+  }
+
+  .cost-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .cost-item span {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .cost-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .button-group {
@@ -442,5 +488,34 @@ input {
     padding-left: 10px;
     font-weight: 600;
     text-align: left;
+  }
+}
+
+/* Extra Small Screens (350-400px) */
+@media (max-width: 400px) {
+  .settings-panel, .cost-breakdown-panel {
+    padding: 10px;
+  }
+
+  .panel-header h3 {
+    font-size: 18px;
+  }
+
+  .settings-group h3, .settings-group h4,
+  .cost-breakdown-group h3, .cost-breakdown-group h4 {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .close-panel-button {
+    padding: 5px;
   }
 }
