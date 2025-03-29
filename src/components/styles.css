@@ -1,0 +1,137 @@
+.header-section {
+  margin-bottom: 2rem;
+}
+
+.text-highlight {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2.text-highlight {
+  margin-bottom: 30;
+  padding: 10;
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.view-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.toggle-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.help-section {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.help-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.help-button:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #0056b3;
+}
+
+.help-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.help-modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.help-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+.help-modal-body {
+  line-height: 1.6;
+}
+
+.help-modal-body h4 {
+  color: #007bff;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.help-modal-body ul {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+}
+
+.help-modal-body li {
+  margin-bottom: 0.5rem;
+}
